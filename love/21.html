@@ -1,0 +1,81 @@
+<html>
+<head>
+		<meta charset="utf-8">
+		<title>张亚鑫</title>
+		
+
+	
+<style>
+.saying:after {
+  content: "|";
+  font-family: Arial, sans-serif;
+  font-size: 2.0em;
+  line-height: 0;
+  display: inline-block;
+  vertical-align: baseline;
+  opacity: 1;
+  animation: caret 500ms infinite;
+}
+
+</style>
+<script language="javascript">
+var index=0;
+var word;
+function type(){
+    var typePanel = document.getElementById("aa");
+    typePanel.innerText = word.substring(0,index++);
+    if(index % 3 == 0){
+        typePanel.className = "";
+    }else if(index % 3 == 1){
+        typePanel.className = "saying";
+    }
+}
+window.onload=function(){
+    word=document.getElementById("w").innerHTML;
+    setInterval(type, 200);
+}
+ 
+</script>
+</head>
+<body>
+<pre id="aa" style="font-size: 37px;" class="saying"></pre>
+<div style="display:none;font-size: 37px;" id="w">今天是你我相识的第13天
+借这个机会我就向你介绍一下最近几年我的人生轨迹
+
+其实在大学期间我就是一个稍内向的男孩，不像其他的同学那么会聊，
+也就在寝室看看电影和动漫，偶尔会去图书馆，
+说白了也就是一个普普通通的大学生，不优秀但也不会拖后腿
+
+改变源于大三换寝室，我从原来的411去了404寝室，
+我认识了新室友老章，人送外号章达人，
+在日常的生活聊天中得知他是一个文艺青年，
+喜欢简书，会拉小提琴，并在简书上与别的简友进行邮寄书信的来往。
+给人的感觉他十分特立独行，似乎与我们不在同一个世界。
+说实话他对我有着潜移默化的影响。
+
+有个小故事我想说一下，老章在大学期间有一个崇拜的人，
+其名为罗永浩，锤子手机的创始人，
+熬不过老章的推荐去看过他的自传《生命不息,折腾不止》，以后有机会再详聊。
+他曾经还专门请假跑去北京看罗永浩的手机发布会，
+我们都认为他很疯狂，这又不是哪个明星演唱会，
+来回又花时间和钱，网络上又有直播，完全没必要这么折腾。
+但是他却说：“有些事情，现场与电视上的感觉完全是天壤之别，
+人不能太安逸，要敢于去体验一些不一样的东西“。
+后来在我对罗永浩有了一定了解后，发现老罗的人格魅力确实很强，是一个敢说又敢做的人。
+有趣的事情就发生在老章毕业后去杭州找苹果app开发的工作，他去了一家比较大的公司面试，
+面试官看到他的手机是锤子手机，就问他是不是锤粉，他说是，并且还去现场看了发布会，
+面试官怕他骗自己，就问了他发布会的时间和内容，因为面试官那场发布会他也去了。
+就这样他们聊老罗甚欢，聊了差不多3个小时，最后也顺利入职。
+事后老章也坦言，要不是遇到老罗的粉丝，他根本进不了这家公司。
+
+再者是大四毕业阶段，受老章的影响我也开始关注简书，进而来到了知乎。
+在简书和知乎上我看到了更大的世界，
+了解极简主义，工匠精神，时间碎片化的危害，推迟满足感，知识和时间管理的重要性。
+
+预知后事如何，请看下回诉说
+
+
+       ---zyx 2019.2.14
+</div>
+ 
+</body>

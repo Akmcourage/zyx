@@ -1,0 +1,119 @@
+<html>
+<head>
+		<meta charset="utf-8">
+		<title></title>	
+<style>
+.saying:after {
+  content: "|";
+  font-family: Arial, sans-serif;
+  font-size: 2.0em;
+  line-height: 0;
+  display: inline-block;
+  vertical-align: baseline;
+  opacity: 1;
+  animation: caret 500ms infinite;
+}
+body{
+	background-color: #fefbeb;
+	color: #888;
+	
+}
+</style>
+<script language="javascript">
+var index=0;
+var word;
+function type(){
+    var typePanel = document.getElementById("aa");
+    typePanel.innerText = word.substring(0,index++);
+    if(index % 3 == 0){
+        typePanel.className = "";		
+    }else if(index % 3 == 1){
+        typePanel.className = "saying";		
+    }
+}
+window.onload=function(){
+    word=document.getElementById("w").innerHTML;
+    setInterval(type, 200);
+}
+</script>
+<script>
+var audio =document.getElementByld("audio");
+function audioAutoPlay(id){
+    var audio = document.getElementById(id);    
+    document.addEventListener("WeixinJSBridgeReady", function () {
+            audio.play();
+    }, false);
+}
+window.onload=function(){
+	audio.play();
+	audioAutoPlay("audio");
+}
+</script>
+</head>
+<body>
+<pre id="aa" style="font-size: 37px;" class="saying"></pre>
+<audio id="audio" src= "a.mp3" controls="controls" autoplay="autoplay" loop="loop" style="display: none;">
+</audio>
+<div style="display:none;font-size: 37px;" id="w">
+今天是你我第一次见面后的第19天,也是元宵佳节,祝元宵快乐。
+
+本来想在微信上,但困于不擅 长聊,
+而你要从早上6点半到晚上10点努力备考(早起的鸟儿有虫吃),不敢时常打扰。
+所以想扩展另一种交流方式,于是这篇短文章就产生了。
+
+说起今年真是不一样的一年,有一本外国小说叫《霍乱时期的爱情》,
+而你我是抗新型冠状病毒传染时的相识。
+
+按照往年,元宵节我一般会去昆明的翠湖公园看红嘴鸥,晚上看彩灯,
+再到公园隔壁的省图书馆猜一下灯谜,
+而今年肯定是呆在家里啦。
+
+说起红嘴鸥就向你简单介绍一下：
+昆明的红嘴鸥是从遥远的西伯利亚飞来的,
+大概12月初飞到昆明过冬,次年3月初离开昆明,
+每年有几万只,时间已经长达30多年,是昆明人的老朋友,
+一到周末就会有许多人去翠湖,滇池,海埂这些地方,看红嘴鸥,喂鸥粮,
+是昆明一大旅游特色之一。
+
+你可以想象一下画面：
+翠湖的红嘴鸥全都集中在九曲桥与燕子桥一带的湖面。
+小小的,洁白的身影,
+只见它们有的自在地游弋,快乐地追赶。
+一些好动的、精神茂盛的红嘴鸥,则一刻不停地扇着翅膀,
+在湖面穿行,还不停地鸣叫着,欢颂着。
+而我拿着鸥粮面包站在湖边,有些熟悉,但又满怀期待白色小精灵的到来。
+
+然后再说说我的大学室友章立哲,人送外号章达人,
+在日常的生活聊天中得知他是一个文艺青年,
+喜欢文字,会拉小提琴,并在简书上与别的简友进行邮寄书信的来往。
+给人的感觉他十分特立独行,似乎与我们不在同一个世界。
+说实话他对我有着潜移默化的影响。
+
+有个小故事我想说一下,老章在大学期间有一个崇拜的人,
+其名为罗永浩,锤子手机的创始人,
+熬不过老章的推荐去看过他的自传《生命不息,折腾不止》,以后有机会再详聊。
+他曾经还专门请假跑去北京看罗永浩的手机发布会,
+我们都认为他很疯狂,这又不是哪个明星演唱会,
+来回又花时间和钱,网络上又有直播,完全没必要这么折腾。
+但是他却说：“有些事情,现场与电视上的感觉完全是天壤之别,
+人不能太安逸,要敢于去体验一些不一样的东西“。
+后来在我对罗永浩有了一定了解后,发现老罗的人格魅力确实很强,是一个敢说又敢做的人。
+有趣的事情就发生在老章毕业后去杭州找苹果app开发的工作,他去了一家比较大的公司面试,
+面试官看到他的手机是锤子手机,就问他是不是锤粉,他说是,并且还去现场看了发布会,
+面试官怕他骗自己,就问了他发布会的时间和内容,因为面试官那场发布会他也去了。
+就这样他们聊老罗甚欢,聊了差不多3个小时,最后也顺利入职。
+事后老章也坦言,要不是遇到老罗的粉丝,他根本进不了这家公司。
+
+虽然现在锤子科技已经不在了,听不到手机发布会老罗讲单口相声,老章也毕业工作了。
+但有幸在那个时候幸遇到这些不一样的人
+
+
+最后给你留三个元宵灯谜：
+
+  武艺非凡(猜一明星)
+  开口就要钱(打一字)
+  打包(打一俗语)
+
+
+</div>
+</body>

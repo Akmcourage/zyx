@@ -23,10 +23,7 @@
 		<link rel="shortcut icon" href="https://xiang.ai/Favicon.ico">
 		<link rel="apple-touch-icon" href="https://xiang.ai/usr/themes/love/favicon.ico">
 		<link href="./js/style.min.css" rel="stylesheet">
-		<!--[if lt IE 9]>
-	<script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
-	<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
+
 		<script src="./js/hm.js"></script>
 		<script>
 			var _hmt = _hmt || [];
@@ -37,21 +34,26 @@
 				s.parentNode.insertBefore(hm, s);
 			})();
 		</script>
+		<script>
+			var audio = document.getElementByld("audio");
+
+			function audioAutoPlay(id) {
+				var audio = document.getElementById(id);
+				document.addEventListener("WeixinJSBridgeReady", function() {
+					audio.play();
+				}, false);
+			}
+			window.onload = function() {
+				audio.play();
+				audioAutoPlay("audio");
+			}
+		</script>
 		<meta http-equiv="Content-Security-Policy" content="style-src * &#39;unsafe-inline&#39; &#39;self&#39; blob: data: file:">
 	</head>
-	<div id="ok_frame_wrapper"><iframe id="ok_frame" src="./js/extension.html" class="MC4xNjU3OTgxMDA3Mjk2NzA1T0sxNTY1MTQ0MDE2OTEx MC42NzI2OTYzMDE4Mjk3MjMyT0sgQ29tcG9uZW50cyAxNTY1MTQ0MDE2OTEx"
-		 style="display:none"></iframe>
-		<fp-div id="okmemo_overlay" class="MC42NzI2OTYzMDE4Mjk3MjMyT0sgQ29tcG9uZW50cyAxNTY1MTQ0MDE2OTEx">
-			
-		</fp-div><a id="okmemo_switcher" href="https://xiang.ai/#" class="MC42NzI2OTYzMDE4Mjk3MjMyT0sgQ29tcG9uZW50cyAxNTY1MTQ0MDE2OTEx fp-tooltips"
-		 data-tooltip="展开方片(Alt + 1)" data-placement="right" style="background-image:url(chrome-extension://bicdefpoleoohkhgcbbhambpghigfeid/images/switcher_c.png) !important;"></a>
-	</div>
+
 	<body>
-		<!--[if lt IE 9]>
-    <div class="browsehappy" role="dialog">
-    当前网页 <strong>不支持</strong> 你正在使用的浏览器. 为了正常的访问, 请升级你的浏览器</a>。
-    </div>
-    <![endif]-->
+		<audio id="audio" src="a.mp3" controls="controls" autoplay="autoplay" loop="loop" style="display: none;">
+		</audio>
 
 		<div class="container grid-sm s-content header">
 			<div class="column col-12">
